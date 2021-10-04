@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Front end, Example, practice7, Omelchenko" />
+    <meta name="description" content="Практична робота 7" />
+    <TITLE>Омельченко В.В. ІК-82</TITLE>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+
+<body onload="funonload();">
+    <script src="./scripts.js"></script>
+
+
+    <div class="exercise" id="exercise1">
+        <form method="post" name="form1">
+            <h4>Зробіть свій вибір</h4>
+
+            <div class="left">
+                <select id="furniture" name="furniture" onchange=loadMaterials()></select>
+            </div>
+            <div class="left">
+                <select id="material" name="material"></select>
+            </div>
+            <div class="left">
+                <input type="number" id="count" name="count" onchange=checkCountInput()>
+            </div>
+            <div class="left">
+                <input type="submit" value="Замовити" id="post_submit" onclick=dataValidation()>
+            </div>
+            <div class="clear"></div>
+        </form>
+    </div>
+
+    <div class="exercise" id="exercise2">
+        <p>
+            <h4>ТРИГОНОМТРИЧНІ ФУНКЦІЇ</h4>
+        </p>
+        <p>
+            <h4>Кут повинен бути більше 0 та менше 90</h4>
+        </p>
+        <p>
+            <h4>Кут в градусах</h4>
+        </p>
+
+        <div class="left">
+            <input type="number" id="angle" onchange=checkAgleInput()>
+        </div>
+        <div class="left">
+            <select id="functionName">
+                <option >sin</option>
+                <option >cos</option>
+                <option >tan</option>
+            </select>
+        </div>
+        <div class="left">
+            <button onclick=calculate()>Обчислити</button>
+        </div>
+        <div class="clear"></div>
+        <p id="resultOutput"></p>
+    </div>
+
+    <div class="exercise" id="exercise3">
+        <p>
+            <h4>y=3cos(2x)</h4>
+        </p>
+        <canvas width="450" height="150"></canvas>
+    </div>
+</body>
+
+
+</html>

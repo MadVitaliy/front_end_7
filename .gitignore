@@ -1,3 +1,7 @@
 /web/*
+/web/www/*
+!/web/www/
 !/web/www/host3.localhost/
+/web/log/*
+!/web/log/
 !/web/log/host3.localhost/

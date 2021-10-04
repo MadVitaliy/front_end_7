@@ -1,0 +1,34 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h4,
+p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+div.exercise {
+    margin-bottom: 50px;
+}
+
+div.left {
+    position: relative;
+    margin-right: 10px;
+    float: left;
+}
+
+div.clear {
+    content: '';
+    display: table;
+    width: 100%;
+    clear: both;
+}
+
+input {
+    border: 1px;
+    border-style: solid;
+    border-color: gray;
+    border-radius: 5px;
+    display: block;
+}
